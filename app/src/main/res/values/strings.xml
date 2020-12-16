@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CS Android Assignment</string>
+
+    <!--activity main-->
+    <string name="playing_now">Playing now</string>
+    <string name="most_popular">Most popular</string>
+</resources>

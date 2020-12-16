@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textColor">@color/labelText</item>
+        <item name="android:paddingLeft">@dimen/label_margin_left_right</item>
+        <item name="android:paddingTop">@dimen/label_margin_top_bottom</item>
+        <item name="android:paddingRight">@dimen/label_margin_left_right</item>
+        <item name="android:paddingBottom">@dimen/label_margin_top_bottom</item>
+        <item name="android:fontFamily">@font/helvetica_neue_normal</item>
+        <item name="android:textSize">@dimen/font_label</item>
+    </style>
+
+    <style name="DialogCustomTheme" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">#E6000000</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+</resources>

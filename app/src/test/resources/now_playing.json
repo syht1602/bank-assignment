@@ -1,0 +1,412 @@
+{
+  "dates": {
+    "maximum": "2020-12-16",
+    "minimum": "2020-10-29"
+  },
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/jeAQdDX9nguP6YOX6QSWKDPkbBo.jpg",
+      "genre_ids": [
+        28,
+        14,
+        878
+      ],
+      "id": 590706,
+      "original_language": "en",
+      "original_title": "Jiu Jitsu",
+      "overview": "Every six years, an ancient order of jiu-jitsu fighters joins forces to battle a vicious race of alien invaders. But when a celebrated war hero goes down in defeat, the fate of the planet and mankind hangs in the balance.",
+      "popularity": 2935.206,
+      "poster_path": "/eLT8Cu357VOwBVTitkmlDEg32Fs.jpg",
+      "release_date": "2020-11-20",
+      "title": "Jiu Jitsu",
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 132
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ckfwfLkl0CkafTasoRw5FILhZAS.jpg",
+      "genre_ids": [
+        28,
+        35,
+        14
+      ],
+      "id": 602211,
+      "original_language": "en",
+      "original_title": "Fatman",
+      "overview": "A rowdy, unorthodox Santa Claus is fighting to save his declining business. Meanwhile, Billy, a neglected and precocious 12 year old, hires a hit man to kill Santa after receiving a lump of coal in his stocking.",
+      "popularity": 2316.383,
+      "poster_path": "/4n8QNNdk4BOX9Dslfbz5Dy6j1HK.jpg",
+      "release_date": "2020-11-13",
+      "title": "Fatman",
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 132
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zKv7KF0pH9ASv2uGgTvTylMlxQn.jpg",
+      "genre_ids": [
+        37
+      ],
+      "id": 729648,
+      "original_language": "en",
+      "original_title": "The Dalton Gang",
+      "overview": "When their brother Frank is killed by an outlaw, brothers Bob Dalton, Emmett Dalton and Gray Dalton join their local sheriff's department. When they are cheated by the law, they turn to crime, robbing trains and anything else they can steal from over the course of two years in the early 1890's. Trying to out do Jesse James, they attempt to rob two banks at once in October of 1892, and things get ugly",
+      "popularity": 1620.161,
+      "poster_path": "/6OeGqp18oZucUGziMIRNhLouZ75.jpg",
+      "release_date": "2020-11-02",
+      "title": "The Dalton Gang",
+      "video": false,
+      "vote_average": 4.5,
+      "vote_count": 22
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wzJRB4MKi3yK138bJyuL9nx47y6.jpg",
+      "genre_ids": [
+        28,
+        53,
+        878
+      ],
+      "id": 577922,
+      "original_language": "en",
+      "original_title": "Tenet",
+      "overview": "Armed with only one word - Tenet - and fighting for the survival of the entire world, the Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
+      "popularity": 1120.397,
+      "poster_path": "/k68nPLbIST6NP96JmTxmZijEvCA.jpg",
+      "release_date": "2020-08-22",
+      "title": "Tenet",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 2788
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gnf4Cb2rms69QbCnGFJyqwBWsxv.jpg",
+      "genre_ids": [
+        53,
+        28,
+        18,
+        80
+      ],
+      "id": 671039,
+      "original_language": "fr",
+      "original_title": "Bronx",
+      "overview": "Caught in the crosshairs of police corruption and Marseille’s warring gangs, a loyal cop must protect his squad by taking matters into his own hands.",
+      "popularity": 1100.016,
+      "poster_path": "/9HT9982bzgN5on1sLRmc1GMn6ZC.jpg",
+      "release_date": "2020-10-30",
+      "title": "Rogue City",
+      "video": false,
+      "vote_average": 5.9,
+      "vote_count": 281
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cq4h43quHugpsSoy5VCtJeihu64.jpg",
+      "genre_ids": [
+        10751,
+        14,
+        12
+      ],
+      "id": 654028,
+      "original_language": "en",
+      "original_title": "The Christmas Chronicles: Part Two",
+      "overview": "Kate Pierce is reluctantly spending Christmas with her mom’s new boyfriend and his son Jack. But when the North Pole and Christmas are threatened to be destroyed, Kate and Jack are unexpectedly pulled into a new adventure with Santa Claus.",
+      "popularity": 834.472,
+      "poster_path": "/6sG0kbEvAi3RRLcGGU5h8l3qAPa.jpg",
+      "release_date": "2020-11-18",
+      "title": "The Christmas Chronicles: Part Two",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 242
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2Fk3AB8E9dYIBc2ywJkxk8BTyhc.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 524047,
+      "original_language": "en",
+      "original_title": "Greenland",
+      "overview": "John Garrity, his estranged wife and their young son embark on a perilous journey to find sanctuary as a planet-killing comet hurtles toward Earth. Amid terrifying accounts of cities getting levelled, the Garrity's experience the best and worst in humanity. As the countdown to the global apocalypse approaches zero, their incredible trek culminates in a desperate and last-minute flight to a possible safe haven.",
+      "popularity": 748.455,
+      "poster_path": "/bNo2mcvSwIvnx8K6y1euAc1TLVq.jpg",
+      "release_date": "2020-07-29",
+      "title": "Greenland",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 901
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8rIoyM6zYXJNjzGseT3MRusMPWl.jpg",
+      "genre_ids": [
+        14,
+        10751,
+        12,
+        35,
+        27
+      ],
+      "id": 531219,
+      "original_language": "en",
+      "original_title": "Roald Dahl's The Witches",
+      "overview": "In late 1967, a young orphaned boy goes to live with his loving grandma in the rural Alabama town of Demopolis. As the boy and his grandmother encounter some deceptively glamorous but thoroughly diabolical witches, she wisely whisks him away to a seaside resort. Regrettably, they arrive at precisely the same time that the world's Grand High Witch has gathered.",
+      "popularity": 651.939,
+      "poster_path": "/betExZlgK0l7CZ9CsCBVcwO1OjL.jpg",
+      "release_date": "2020-10-26",
+      "title": "Roald Dahl's The Witches",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 888
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gEjNlhZhyHeto6Fy5wWy5Uk3A9D.jpg",
+      "genre_ids": [
+        28,
+        27,
+        53
+      ],
+      "id": 581392,
+      "original_language": "ko",
+      "original_title": "반도",
+      "overview": "A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.",
+      "popularity": 712.594,
+      "poster_path": "/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg",
+      "release_date": "2020-07-15",
+      "title": "Peninsula",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 883
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eShw0LB5CkoEfYtpUcXPD85oz5Q.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35,
+        14
+      ],
+      "id": 551804,
+      "original_language": "en",
+      "original_title": "Freaky",
+      "overview": "A mystical, ancient dagger causes a notorious serial killer to magically switch bodies with a 17-year-old girl.",
+      "popularity": 712.946,
+      "poster_path": "/8xC6QSyxrpm0D5A6iyHNemEWBVe.jpg",
+      "release_date": "2020-11-12",
+      "title": "Freaky",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 115
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/d1sVANghKKMZNvqjW0V6y1ejvV9.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14,
+        18
+      ],
+      "id": 635302,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限列車編",
+      "overview": "Tanjirō Kamado, joined with Inosuke Hashibira, a boy raised by boars who wears a boar's head, and Zenitsu Agatsuma, a scared boy who reveals his true power when he sleeps, boards the Infinity Train on a new mission with the Fire Hashira, Kyōjurō Rengoku, to defeat a demon who has been tormenting the people and killing the demon slayers who oppose it!",
+      "popularity": 428.982,
+      "poster_path": "/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg",
+      "release_date": "2020-10-16",
+      "title": "Demon Slayer the Movie: Mugen Train",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 95
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h00iFXMpGuls2GEnXIGFzQUeaFr.jpg",
+      "genre_ids": [
+        18,
+        27,
+        53
+      ],
+      "id": 726208,
+      "original_language": "es",
+      "original_title": "Voces",
+      "overview": "After the strange death of his young son at their new home, Daniel hears a ghostly plea for help, spurring him to seek out a renowned paranormal expert.",
+      "popularity": 461.252,
+      "poster_path": "/ffdPUteSePSqJEhKJKwgSIWumC2.jpg",
+      "release_date": "2020-07-24",
+      "title": "Don't Listen",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 191
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6C7ZGYeR8QpT3X6C2RFEu6yiSKK.jpg",
+      "genre_ids": [
+        10751,
+        14,
+        10402
+      ],
+      "id": 622855,
+      "original_language": "en",
+      "original_title": "Jingle Jangle: A Christmas Journey",
+      "overview": "An imaginary world comes to life in a holiday tale of an eccentric toymaker, his adventurous granddaughter, and a magical invention that has the power to change their lives forever.",
+      "popularity": 423.803,
+      "poster_path": "/5RbyHIVydD3Krmec1LlUV7rRjet.jpg",
+      "release_date": "2020-11-06",
+      "title": "Jingle Jangle: A Christmas Journey",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 200
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lIE7kfdLBRd0KENNtOaIqPPWNqh.jpg",
+      "genre_ids": [
+        27,
+        18,
+        14
+      ],
+      "id": 590995,
+      "original_language": "en",
+      "original_title": "The Craft: Legacy",
+      "overview": "An eclectic foursome of aspiring teenage witches get more than they bargained for as they lean into their newfound powers.",
+      "popularity": 602.094,
+      "poster_path": "/lhMIra0pqWNuD6CIXoTmGwZ0EBS.jpg",
+      "release_date": "2020-10-28",
+      "title": "The Craft: Legacy",
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 147
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8e2j8EeJ1z2OCmbGmMaX6xg1u2w.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 650747,
+      "original_language": "es",
+      "original_title": "Historias lamentables",
+      "overview": "This satirical anthology tells the surreal stories of a gift for Don Horacio, a trip to the beach for Bermejo, a life-changing relationship between Tina and the young immigrant Ayoub, and a new client for a company that specializes in excuses.",
+      "popularity": 464.005,
+      "poster_path": "/vijoU09NBYoQ5VpawXj2AfGOmCw.jpg",
+      "release_date": "2020-11-19",
+      "title": "Historias lamentables",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 61
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/x4UkhIQuHIJyeeOTdcbZ3t3gBSa.jpg",
+      "genre_ids": [
+        28,
+        12,
+        18,
+        53
+      ],
+      "id": 718444,
+      "original_language": "en",
+      "original_title": "Rogue",
+      "overview": "Battle-hardened O’Hara leads a lively mercenary team of soldiers on a daring mission: rescue hostages from their captors in remote Africa. But as the mission goes awry and the team is stranded, O’Hara’s squad must face a bloody, brutal encounter with a gang of rebels.",
+      "popularity": 341.009,
+      "poster_path": "/uOw5JD8IlD546feZ6oxbIjvN66P.jpg",
+      "release_date": "2020-08-20",
+      "title": "Rogue",
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 396
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wk58aoyWpMTVkKkdjw889XfWGdL.jpg",
+      "genre_ids": [
+        53,
+        80,
+        9648
+      ],
+      "id": 646593,
+      "original_language": "en",
+      "original_title": "Wander",
+      "overview": "After getting hired to probe a suspicious death in the small town of Wander, a mentally unstable private investigator becomes convinced the case is linked to the same 'conspiracy cover up' that caused the death of his daughter.",
+      "popularity": 446.921,
+      "poster_path": "/2AwPvNHphpZBJDqjZKVuMAbvS0v.jpg",
+      "release_date": "2020-12-04",
+      "title": "Wander",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 13
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xUWxP7XuCCu9NvaDKmRuWgthi8C.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 591629,
+      "original_language": "en",
+      "original_title": "Lady Driver",
+      "overview": "When a rebellious teen embarks on a solo summer journey to connect with her roots, she finds herself in a new world, geared up for the ride of her life, and discovers she had the drive in her all along.",
+      "popularity": 276.25,
+      "poster_path": "/uGLbtsn1yzRMe8rTVN8jGo4naYf.jpg",
+      "release_date": "2020-12-03",
+      "title": "Lady Driver",
+      "video": false,
+      "vote_average": 1,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cjaOSjsjV6cl3uXdJqimktT880L.jpg",
+      "genre_ids": [
+        12,
+        14,
+        10751,
+        16
+      ],
+      "id": 529203,
+      "original_language": "en",
+      "original_title": "The Croods: A New Age",
+      "overview": "After leaving their cave, the Croods encounter their biggest threat since leaving: another family called the Bettermans, who claim and show to be better and evolved. Grug grows suspicious of the Betterman parents, Phil and Hope,  as they secretly plan to break up his daughter Eep with her loving boyfriend Guy to ensure that their daughter Dawn has a loving and smart partner to protect her.",
+      "popularity": 377.317,
+      "poster_path": "/tK1zy5BsCt1J4OzoDicXmr0UTFH.jpg",
+      "release_date": "2020-11-25",
+      "title": "The Croods: A New Age",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 61
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tOrXzhkkln13QK5xCmEqwgB6Vlk.jpg",
+      "genre_ids": [
+        878,
+        14,
+        27
+      ],
+      "id": 674025,
+      "original_language": "en",
+      "original_title": "Aztech",
+      "overview": "Fragments of a meteor crash in Mexico and United States. Thirteen stories in different spaces and times happen in places of collisions .",
+      "popularity": 270.594,
+      "poster_path": "/t9ttLmZ3NJbgtnOsGyQNiF2ngJo.jpg",
+      "release_date": "2020-11-20",
+      "title": "Aztech",
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 24
+    }
+  ],
+  "total_pages": 65,
+  "total_results": 1288
+}

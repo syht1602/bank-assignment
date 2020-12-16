@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.backbase.assignment.ui.utils.Utils" />
+
+        <variable
+            name="mainViewModel"
+            type="com.backbase.assignment.ui.viewmodels.MainViewModel" />
+
+        <variable
+            name="movieDetail"
+            type="com.backbase.assignment.ui.models.moviedetail.MovieDetailModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:onClick="@{()->mainViewModel.changeDialogState()}"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arrow_back_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgPoster"
+            imageUrl="@{Utils.imageUrlGenerator(movieDetail.poster_path)}"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:background="@color/posterBackground"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgBack" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/helvetica_neu_bold"
+            android:gravity="center"
+            android:text="@{movieDetail.original_title}"
+            android:textColor="@color/popular_item_text"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgPoster" />
+
+        <TextView
+            android:id="@+id/tvDateDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica_neue_normal"
+            android:text="@{Utils.releaseDatetimeConverter(movieDetail.release_date,movieDetail.runtime)}"
+            android:textColor="@color/popular_item_text"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvOverviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/helvetica_neu_bold"
+            android:text="Overview"
+            android:textColor="@color/popular_item_text"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDateDuration" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:maxHeight="200dp"
+            android:scrollbars="vertical"
+            app:layout_constraintStart_toStartOf="@id/tvOverviewLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvOverviewLabel">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_neue_normal"
+                android:text="@{movieDetail.overview}"
+                android:textColor="@color/popular_item_text">
+
+            </TextView>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

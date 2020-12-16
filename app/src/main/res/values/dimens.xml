@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--activity main-->
+    <dimen name="header_height">65dp</dimen>
+    <dimen name="playing_now_height">160dp</dimen>
+    <dimen name="label_height">24dp</dimen>
+    <dimen name="label_margin_left_right">19dp</dimen>
+    <dimen name="label_margin_top_bottom">4dp</dimen>
+
+    <!--Font size-->
+    <!--activity main-->
+    <dimen name="font_label">16sp</dimen>
+</resources>
