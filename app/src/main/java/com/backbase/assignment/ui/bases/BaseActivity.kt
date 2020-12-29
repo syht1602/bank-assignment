@@ -9,23 +9,21 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.ViewDataBinding
 import com.backbase.assignment.ui.db.databaseModule
 import com.backbase.assignment.ui.di.gsonModule
+import com.backbase.assignment.ui.di.networkModule
 import com.backbase.assignment.ui.di.viewModelModule
 import com.backbase.assignment.ui.interfaces.IBaseActivity
-import com.backbase.assignment.ui.network.networkModule
 import com.backbase.assignment.ui.repositories.movieModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
-
+import org.koin.core.context.stopKoin
 
 /**
  * Create Base activity for data binding and view model binding
  */
-abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity(),
+abstract class BaseActivity : AppCompatActivity(),
     IBaseActivity {
-    private lateinit var binding: B
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,6 +53,9 @@ abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity(),
 
     override fun onCreateInit() {}
 
+    /**
+     * Check internet connection to prevent app crash.
+     */
     open fun isInternetAvailable(): Boolean {
         var isConnected = false
         val connectivityManager =
@@ -85,5 +86,10 @@ abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity(),
             Toast.makeText(this, "Internet error", Toast.LENGTH_SHORT).show()
         }
         return isConnected
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        stopKoin()
     }
 }

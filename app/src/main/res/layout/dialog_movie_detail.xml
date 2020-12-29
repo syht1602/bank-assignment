@@ -51,13 +51,15 @@
 
         <TextView
             android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="15dp"
-            android:fontFamily="@font/helvetica_neu_bold"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/free_sans_bold"
             android:gravity="center"
+            android:maxLines="2"
             android:text="@{movieDetail.original_title}"
             android:textColor="@color/popular_item_text"
             android:textSize="20sp"
@@ -69,7 +71,7 @@
             android:id="@+id/tvDateDuration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/helvetica_neue_normal"
+            android:fontFamily="@font/free_sans"
             android:text="@{Utils.releaseDatetimeConverter(movieDetail.release_date,movieDetail.runtime)}"
             android:textColor="@color/popular_item_text"
             android:textSize="15sp"
@@ -83,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="25dp"
-            android:fontFamily="@font/helvetica_neu_bold"
+            android:fontFamily="@font/free_sans_bold"
             android:text="Overview"
             android:textColor="@color/popular_item_text"
             android:textSize="20sp"
@@ -91,25 +93,45 @@
             app:layout_constraintTop_toBottomOf="@id/tvDateDuration" />
 
         <ScrollView
+            android:id="@+id/scvOverview"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="0dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:maxHeight="200dp"
             android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/tvOverviewLabel"
             app:layout_constraintTop_toBottomOf="@id/tvOverviewLabel">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/helvetica_neue_normal"
-                android:text="@{movieDetail.overview}"
-                android:textColor="@color/popular_item_text">
+                android:orientation="vertical">
 
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/free_sans"
+                    android:maxHeight="200dp"
+                    android:text="@{movieDetail.overview}"
+                    android:textColor="@color/popular_item_text">
+
+                </TextView>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/fbGenre"
+                    createGenre="@{movieDetail.genres}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:flexWrap="wrap" />
+
+            </LinearLayout>
         </ScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

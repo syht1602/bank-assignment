@@ -14,7 +14,7 @@
         <item name="android:paddingTop">@dimen/label_margin_top_bottom</item>
         <item name="android:paddingRight">@dimen/label_margin_left_right</item>
         <item name="android:paddingBottom">@dimen/label_margin_top_bottom</item>
-        <item name="android:fontFamily">@font/helvetica_neue_normal</item>
+        <item name="android:fontFamily">@font/free_sans</item>
         <item name="android:textSize">@dimen/font_label</item>
     </style>
 

@@ -37,14 +37,17 @@
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
             android:ellipsize="end"
-            android:fontFamily="@font/helvetica_neu_bold"
+            android:fontFamily="@font/free_sans_bold"
+            android:maxLines="1"
+            android:singleLine="true"
             android:textColor="@color/popular_item_text"
             android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/rating"
             app:layout_constraintRight_toLeftOf="@id/rating"
             app:layout_constraintStart_toEndOf="@+id/posterParent"
             app:layout_constraintTop_toTopOf="@+id/posterParent"
@@ -54,9 +57,9 @@
             android:id="@+id/releaseDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/helvetica_neue_normal"
+            android:fontFamily="@font/free_sans"
             android:textColor="@color/popular_item_text"
+            android:layout_marginTop="2dp"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/title"
             app:layout_constraintTop_toBottomOf="@+id/title"
@@ -66,8 +69,8 @@
             android:id="@+id/tvRuntime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/helvetica_neue_normal"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/free_sans"
             android:text="-"
             android:textColor="@color/popular_item_text"
             android:textSize="12sp"
@@ -77,11 +80,12 @@
 
         <com.backbase.assignment.ui.views.RatingView
             android:id="@+id/rating"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/title"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

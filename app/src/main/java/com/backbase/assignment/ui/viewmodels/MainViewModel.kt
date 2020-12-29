@@ -1,12 +1,7 @@
 package com.backbase.assignment.ui.viewmodels
 
 import android.util.Log
-import android.widget.Toast
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Transformations
-import androidx.lifecycle.liveData
-import androidx.lifecycle.viewModelScope
-import com.backbase.assignment.ui.bases.BaseViewModel
+import androidx.lifecycle.*
 import com.backbase.assignment.ui.models.moviedetail.MovieDetailModel
 import com.backbase.assignment.ui.repositories.MovieRepository
 import com.backbase.assignment.ui.utils.Constants.Companion.API_KEY
@@ -15,9 +10,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
-import java.net.InetAddress
 
-class MainViewModel(private val repo: MovieRepository) : BaseViewModel() {
+class MainViewModel(private val repo: MovieRepository) : ViewModel() {
     private var currentPage = MutableLiveData<Int>()
     val dialogState = MutableLiveData<Boolean>()
     val movieDetail = MutableLiveData<MovieDetailModel>()

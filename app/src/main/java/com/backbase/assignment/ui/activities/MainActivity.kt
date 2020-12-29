@@ -17,12 +17,9 @@ import com.backbase.assignment.ui.models.nowplaying.NowPlayingModel
 import com.backbase.assignment.ui.models.popular.PopularModel
 import com.backbase.assignment.ui.viewmodels.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.MainScope
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
-class MainActivity : BaseActivity<ActivityMainBinding>(), CoroutineScope by MainScope() {
+class MainActivity : BaseActivity() {
     private val viewModel by viewModel<MainViewModel>()
     private lateinit var binding: ActivityMainBinding
     private lateinit var dialogBinding: DialogMovieDetailBinding
@@ -137,7 +134,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(), CoroutineScope by Main
         dialogBinding.mainViewModel = viewModel
         try {
             viewModel.dialogState.observe(this, Observer {
-                if (it) movieDetailDialog.show() else movieDetailDialog.dismiss()
+                if (it) movieDetailDialog.show() else {
+                    movieDetailDialog.dismiss()
+                    dialogBinding.fbGenre.removeAllViews()
+                }
             })
         } catch (e: Exception) {
             Toast.makeText(this, "Some error occur", Toast.LENGTH_SHORT).show()

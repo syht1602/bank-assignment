@@ -12,4 +12,15 @@
     <color name="posterBackground">#828282</color>
     <color name="popular_item_text">#cdcdcd</color>
 
+    <!--Rating view-->
+    <color name="rating_view_background">#081c23</color>
+    <color name="rating_view_less_50">#d1d530</color>
+    <color name="rating_view_less_50_left">#413e0e</color>
+    <color name="rating_view_great_50">#1fd07a</color>
+    <color name="rating_view_great_50_left">#204428</color>
+
+    <!--Movie detail dialog-->
+    <color name="genre_text">#353535</color>
+
+
 </resources>

@@ -4,11 +4,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.backbase.assignment.R
 import com.backbase.assignment.databinding.ViewNowPlayingItemBinding
 import com.backbase.assignment.ui.models.nowplaying.NowPlayingModel
 import com.backbase.assignment.ui.utils.Utils
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 
 class NowPlayingAdapter(private val nowShowingItems: ArrayList<NowPlayingModel>) :
     RecyclerView.Adapter<NowPlayingAdapter.MyViewHolder>() {
@@ -34,6 +36,7 @@ class NowPlayingAdapter(private val nowShowingItems: ArrayList<NowPlayingModel>)
             Glide
                 .with(context)
                 .load(Utils.imageUrlGenerator(item.backdrop_path))
+                .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .into(binding.ivNowPlayingItem)
         }
     }
