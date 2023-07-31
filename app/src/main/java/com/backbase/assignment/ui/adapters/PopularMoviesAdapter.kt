@@ -2,9 +2,9 @@ package com.backbase.assignment.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.backbase.assignment.R
 import com.backbase.assignment.databinding.MovieItemBinding
 import com.backbase.assignment.ui.interfaces.IPopularAdapter
@@ -41,21 +41,24 @@ class PopularMoviesAdapter(
             popularInterface: IPopularAdapter,
             itemCount: Int
         ) = with(itemView) {
-            val circularProgressDrawable = CircularProgressDrawable(context)
-            circularProgressDrawable.strokeWidth = 5f
-            circularProgressDrawable.centerRadius = 30f
-            circularProgressDrawable.start()
+            val circularProgressDrawable = ProgressBar(context).apply {
+                max = 100
+            }
+            circularProgressDrawable.max = 100
+//            circularProgressDrawable.strokeWidth = 5f
+//            circularProgressDrawable.centerRadius = 30f
+//            circularProgressDrawable.start()
 
             Glide
                 .with(context)
                 .load(Utils.imageUrlGenerator(item.poster_path))
-                .placeholder(circularProgressDrawable)
+//                .placeholder(circularProgressDrawable)
                 .error(R.drawable.ic_sharp_broken_image_24)
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .into(binding.poster)
             binding.title.text = item.title
             binding.releaseDate.text = Utils.dateConverter(item.release_date)
-            binding.tvRuntime.text = item.runtime
+//            binding.tvRuntime.text = item.runtime
             binding.clMovieItem.setOnClickListener {
                 popularInterface.movieItemClick(item)
             }

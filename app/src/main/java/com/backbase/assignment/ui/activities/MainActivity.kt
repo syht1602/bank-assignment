@@ -16,7 +16,6 @@ import com.backbase.assignment.ui.interfaces.IPopularAdapter
 import com.backbase.assignment.ui.models.nowplaying.NowPlayingModel
 import com.backbase.assignment.ui.models.popular.PopularModel
 import com.backbase.assignment.ui.viewmodels.MainViewModel
-import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : BaseActivity() {
@@ -45,6 +44,7 @@ class MainActivity : BaseActivity() {
         setPopularRecyclerView()
         setupMovieDetailObserve()
         setupMovieDetailDialogObserve()
+        viewModel.fetchPopularList()
     }
 
     /**
@@ -53,16 +53,16 @@ class MainActivity : BaseActivity() {
      */
     private fun setUpNowPlayingRecyclerView() {
         nowPlayingAdapter = NowPlayingAdapter(nowPlayingList)
-        rcvNowPlaying.layoutManager =
+        binding.rcvNowPlaying.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        rcvNowPlaying.adapter = nowPlayingAdapter
-        rcvNowPlaying.setItemViewCacheSize(20);
+        binding.rcvNowPlaying.adapter = nowPlayingAdapter
+        binding.rcvNowPlaying.setItemViewCacheSize(20);
         try {
             viewModel.nowPlayingList.observe(this, Observer {
                 it?.let {
                     val resultListNowPlayingModel: List<NowPlayingModel> = it.results
                     nowPlayingList.addAll(resultListNowPlayingModel)
-                    rcvNowPlaying.adapter?.notifyDataSetChanged()
+                    binding.rcvNowPlaying.adapter?.notifyDataSetChanged()
                 }
             })
         } catch (e: Exception) {
@@ -94,16 +94,16 @@ class MainActivity : BaseActivity() {
         }
 
         popularMoviesAdapter = PopularMoviesAdapter(popularList, popularAdapter)
-        rcvPopular.layoutManager =
+        binding.rcvPopular.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        rcvPopular.adapter = popularMoviesAdapter
-        rcvPopular.setItemViewCacheSize(20);
+        binding.rcvPopular.adapter = popularMoviesAdapter
+        binding.rcvPopular.setItemViewCacheSize(20);
         try {
             viewModel.popularList.observe(this, Observer {
                 it?.let {
-                    val resultListNowPlayingModel: List<PopularModel> = it.results
+                    val resultListNowPlayingModel: List<PopularModel> = it
                     popularList.addAll(resultListNowPlayingModel)
-                    rcvPopular.adapter?.notifyDataSetChanged()
+                    binding.rcvPopular.adapter?.notifyDataSetChanged()
                 }
             })
         } catch (e: Exception) {

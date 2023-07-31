@@ -15,5 +15,5 @@ data class PopularModel(
     val video: Boolean,
     val vote_average: Double,
     val vote_count: Int,
-    var runtime: String
+//    var runtime: String
 )

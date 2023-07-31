@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.setPadding
 import androidx.databinding.BindingAdapter
-import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.backbase.assignment.R
 import com.backbase.assignment.ui.models.moviedetail.Genre
 import com.bumptech.glide.Glide
@@ -25,16 +24,16 @@ fun loadImage(
     view: ImageView,
     url: String
 ) {
-    val circularProgressDrawable = CircularProgressDrawable(view.context)
-    circularProgressDrawable.strokeWidth = 5f
-    circularProgressDrawable.centerRadius = 30f
-    circularProgressDrawable.backgroundColor = Color.TRANSPARENT
-    circularProgressDrawable.start()
+//    val circularProgressDrawable = CircularProgressDrawable(view.context)
+//    circularProgressDrawable.strokeWidth = 5f
+//    circularProgressDrawable.centerRadius = 30f
+//    circularProgressDrawable.backgroundColor = Color.TRANSPARENT
+//    circularProgressDrawable.start()
 
     if (url.isNotEmpty()) {
         Glide.with(view.context)
             .load(url)
-            .placeholder(circularProgressDrawable)
+//            .placeholder(circularProgressDrawable)
             .error(R.drawable.ic_sharp_broken_image_24)
             .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
             .into(view)

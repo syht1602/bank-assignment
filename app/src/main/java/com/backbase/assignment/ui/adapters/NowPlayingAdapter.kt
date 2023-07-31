@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.backbase.assignment.R
 import com.backbase.assignment.databinding.ViewNowPlayingItemBinding
 import com.backbase.assignment.ui.models.nowplaying.NowPlayingModel
